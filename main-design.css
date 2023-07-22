@@ -1,0 +1,302 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background: #222121;
+  min-height: 100vh;
+  padding: 20px;
+  padding-top: 10px;
+}
+
+/* start header */
+header {
+  width: 100%;
+  position: fixed;
+  backdrop-filter: blur(8px);
+  z-index: 99;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 0 0 20px 20px;
+}
+nav .logo {
+  font-size: 35px;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: cursive;
+}
+nav .logo span {
+  color: orange;
+}
+nav .sections {
+  padding: 10px;
+}
+nav .sections ul {
+  list-style: none;
+  direction: rtl;
+}
+nav .sections ul a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  margin-right: 12px;
+  font-family: cursive;
+  font-weight: 500;
+  transition: 0.5s ease-in-out;
+}
+nav .sections ul a:hover {
+  color: orange;
+}
+nav .sections ul .active {
+  color: orange;
+}
+/* end header */
+/*start best moviee */
+.best-movies {
+  /* display: inline-grid;
+  height: 50vh;
+  gap: 20px;
+  width: 100%; */
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+  margin-top: 20px;
+}
+.best-movies .big-img {
+  height: 100%;
+}
+.best-movies .big-img img {
+  height: 80vh;
+  width: 745px;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.best-movies .other-img {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.best-movies .other-img img {
+  width: calc(90% / 2);
+  height: 150px;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.best-movies .other-img img:last-child {
+  width: 100%;
+}
+/*end best moviee */
+/* start section romantice films */
+.romantice {
+  margin-top: 200px;
+  width: 100%;
+}
+.romantice h3 {
+  font-size: 35px;
+  color: #ffffff;
+  background-color: orange;
+  padding: 7px;
+  text-align: center;
+  border-radius: 20px;
+}
+.autoplay {
+  margin-top: 30px;
+  /* display: flex;
+  flex-wrap: wrap; */
+  width: 100%;
+}
+.autoplay .romantice-card {
+  width: 350px;
+  height: 250px;
+}
+.autoplay .romantice-card a {
+  text-decoration: none;
+}
+.autoplay .romantice-card img {
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
+}
+.slick-next {
+  right: -15px;
+  width: 40px;
+  height: 40px;
+}
+.slick-prev {
+  left: -9px;
+  z-index: 99;
+}
+.slick-dots {
+  bottom: -38px;
+}
+.slick-dots li button:before {
+  font-size: 18px;
+  color: #ffffff;
+}
+.advinutre {
+  margin-top: 100px;
+}
+.action {
+  margin-top: 100px;
+}
+/* end section romantice films */
+/* start film page */
+.film-intro {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 100px;
+}
+.film-intro .film-img {
+  width: 100%;
+}
+.film-intro .film-img img {
+  border-radius: 10px;
+  width: 100%;
+}
+.film-intro .film-img a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  border: 3px solid orange;
+  background-color: orange;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 25px;
+  transition: 0.5s ease-in-out;
+}
+.film-intro .film-img a:hover {
+  background-color: transparent;
+  color: orange;
+}
+.film-intro .film-info {
+  border-radius: 10px;
+  padding: 10px 15px;
+  width: 100%;
+  height: 100%;
+}
+.film-intro .film-info h3 {
+  color: orange;
+  font-size: 45px;
+}
+.film-intro .film-info .film-review {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-top: 30px;
+}
+.film-intro .film-info .film-review .film-type {
+  padding: 7px 15px;
+  border: 2px solid #ffffff;
+  text-align: center;
+  border-radius: 20px;
+  margin-right: 10px;
+  height: auto;
+}
+.film-intro .film-info .film-review .film-type h4 {
+  color: orange;
+  font-size: 25px;
+}
+.film-intro .film-info p {
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 45px;
+  margin-top: 15px;
+  direction: rtl;
+}
+.film-intro .film-info a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  border: 3px solid orange;
+  background-color: orange;
+  border-radius: 10px;
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 25px;
+  text-align: center;
+}
+.promo {
+  margin-top: 50px;
+  width: 100%;
+}
+.promo h3 {
+  color: #ffffff;
+  background-color: orange;
+  display: block;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.promo iframe {
+  width: 100%;
+  height: 600px;
+  border-radius: 20px;
+}
+/* end film page */
+/* start responsive */
+@media screen and (max-width: 676px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav .sections ul a {
+    font-size: 18px;
+    margin-right: 6px;
+  }
+  nav .logo {
+    width: 100%;
+    text-align: center;
+  }
+  .best-movies {
+    min-height: 50vh;
+    flex-wrap: wrap;
+  }
+  .best-movies .big-img {
+    height: auto;
+  }
+  .best-movies .big-img img {
+    width: 100%;
+    height: auto;
+  }
+  .best-movies .other-img img {
+    height: auto;
+    width: calc(90% / 3.5);
+  }
+  .romantice {
+    margin-top: 68px;
+  }
+  .autoplay .romantice-card {
+    width: calc(80% / 2);
+  }
+  .autoplay .romantice-card img {
+    width: 100%;
+  }
+}
+/* end responsive */
+/* start film page responsive */
+@media screen and (max-width: 676px) {
+  .film-intro {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 130px;
+  }
+  .film-info {
+    margin-top: 30px;
+  }
+}
+/* end film page responsive */
