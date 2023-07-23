@@ -59,6 +59,16 @@ nav .sections ul .active {
 }
 /* end header */
 /*start best moviee */
+.main-title {
+  font-size: 35px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  background-color: orange;
+  padding: 7px;
+  border-radius: 20px;
+}
 .best-movies {
   /* display: inline-grid;
   height: 50vh;
@@ -262,20 +272,24 @@ nav .sections ul .active {
     width: 100%;
     text-align: center;
   }
+  .main-title {
+    margin-top: 135px;
+  }
   .best-movies {
     min-height: 50vh;
     flex-wrap: wrap;
   }
   .best-movies .big-img {
     height: auto;
+    margin-bottom: 21px;
   }
   .best-movies .big-img img {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
   .best-movies .other-img img {
     height: auto;
-    width: calc(90% / 3.5);
+    width: calc(96% / 3.5);
   }
   .romantice {
     margin-top: 68px;
@@ -284,7 +298,7 @@ nav .sections ul .active {
     width: calc(80% / 2);
   }
   .autoplay .romantice-card img {
-    width: 100%;
+    width: 94%;
   }
 }
 /* end responsive */
